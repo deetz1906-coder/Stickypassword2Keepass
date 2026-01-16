@@ -21,23 +21,4 @@ python s2k.py password.xml out.csv
 ```
 ```
 python s2k.py -o out.csv
----
-
-## Fork notes (2026)
-
-This fork contains fixes for newer Sticky Password XML exports on Windows.
-
-### Fixes
-- Prevents `KeyError: 'Name'` by using safe attribute access (`.get(...)`)
-- Avoids crashes when entries are missing expected attributes
-
-### Export from Sticky Password
-Use the unencrypted export:
-- **Sticky Password 6 XML**
-
-### Usage
-If your XML file is named `default.xml` in the current folder:
-
-```bash
-python s2k.py
 ```
